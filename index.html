@@ -1,0 +1,156 @@
+<html>
+<head>
+<script src="js/fight.js"></script>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!--<img id="marking" src="image/marking.png" >-->
+  <div id="button_fight_panel">
+    <div id="player_panel_main" style="display:none;">
+      <input id="key_battle_1" type=button value="Атака" onClick="player_attack()"><br>
+      <input id="key_battle_1" type=button value="Магия" onClick="player_magic()"><br>
+      <input id="key_battle_1" type=button value="Вещи" onClick="player_things()"><br>
+    </div>
+    <div id="player_panel_attack" style="display:none;">
+      <input id="key_battle_1" type=button value="Голова" onClick="Head()"><br>
+      <input id="key_battle_1" type=button value="Корпус" onClick="Body()"><br>
+      <input id="key_battle_1" type=button value="Ноги" onClick="Feet()"><br>
+    </div>
+    <div id="player_panel_magic" style="display:none;">    
+    <div id="battle_kind_magic">
+      <input id="key_battle_2" type=button value="1" onClick=""><br>
+      <input id="key_battle_2" type=button value="2" onClick=""><br>
+      <input id="key_battle_2" type=button value="3" onClick=""><br>
+    </div>     
+    </div>
+      <div id="player_panel_things" style="display:none;">
+    </div>
+  </div>
+ <div id="Inscriptions_image_panel">
+    <div id="damage_player_panel"> 
+      <center><span id="inscriptions_damage_player"></span>
+    </div>
+    <div id="damage_computer_panel"> 
+      <span id="inscriptions_damage_computer" style="display:none;"></span>
+    </div>
+ </div>
+ <div id="player_panel">
+    <span id="inscriptions_life_player"></span>
+ </div>
+    
+  <IMG ID="f0004" SRC="Оп.gif" STYLE="position:absolute;top:11.5%;width:30%;left:60%;height:1%">
+  <IMG ID="f0001" SRC="Оп.gif" STYLE="position:absolute;top:9%;left:60%;width:15.5%;height:1%">
+  <SPAN ID="inscriptions_life_computer" STYLE="position:absolute;top:9%;left:80%; color:#0808C0; font-size: 100%; width=50%; "></SPAN>   
+  
+  <span id='WinLabel' STYLE="position:absolute; top:45%; left:45%; color:#E60000; font-size: 500%;"></span>  
+  
+
+   <IMG ID="f0002" SRC="Оп.gif" STYLE="position:absolute;top:11.5%;width:30%;left:7.5%;height:1%">
+   <IMG ID="f0003" SRC="Оп.gif" STYLE="position:absolute;top:9%;left:7.5%;width:15.5%;height:1%">
+   <span id="inscriptions_life_player" STYLE="position:absolute;top:9%;left:80%; color:#0808C0; font-size: 100%; width=50%; "></span>
+  
+<span id="Background"  style="display:block;" ></span>
+<div id="improving_performance" style="display:none;"  >
+  <center><h1>Выберите характеристику которую хотите повысить:</h1>
+  <h2>Оставшиеся очки:<span id=""></span><h2></center>
+  <table id="improving_performance_table">
+    </tr>
+    <tr>
+      <th>Ловкость</th>
+      <th><span id="inscriptions_agillity_plus"></span></th>      
+      <th><input id="plus_characteristics" type=button value="+1" onClick=""></th>                   
+    </tr>
+    <tr>
+      <th>Интелект</th>
+      <th><span id="inscriptions_intellect_plus"></span></th>      
+      <th><input id="plus_characteristics" type=button value="+1" onClick=""></th>
+    </tr>
+    <tr>
+      <th>Сила</th>
+      <th><span id="inscriptions_force_plus"></span></th>      
+      <th><input id="plus_characteristics" type=button value="+1" onClick=""></th>
+    </tr>
+    <tr>
+      <th>Защита</th>
+      <th><span id="inscriptions_protection_plus"></span></th>      
+      <th><input id="plus_characteristics" type=button value="+1" onClick=""></th>
+    </tr>
+    <tr>
+      <th>Жизни</th>
+      <th><span id="inscriptions_life_plus"></span></th>      
+      <th><input id="plus_characteristics" type=button value="+5" onClick=""></th>
+    </tr>
+    <tr>
+      <th>Точность</th>
+      <th><span id="inscriptions_severity_plus"></span></th>      
+      <th><input id="plus_characteristics" type=button value="+1" onClick=""></th>
+    </tr>
+    <tr>
+      <th>Скорость</th>
+      <th><span id="inscriptions_speed_plus"></span></th>      
+      <th><input id="plus_characteristics" type=button value="+0.1" onClick=""></th>
+    </tr>
+  </table>
+</div>
+<div id="info_level_rise" style="display:none;"  >
+  <div id="inscription_level_rise" align="center" >
+   <h3>Поздравляем, ваш уровень вырос!</h3>
+   <h4> Теперь стало доступно: </h4>
+  </div>
+  <div id="available_level_rise" align="center" >
+  </div>
+  <table id="reward_level_rise_table">
+    <caption>Вы получили:</caption>
+    <tr>
+      <th><img src="image/coins.jpg" ></th>
+      <th id="bonus_table"><span id='coins_level_rise'></span></th>
+      <th></th>
+    </tr>
+    <tr>
+      <th><img src="image/points.jpg" ></th>
+      <th id="bonus_table"><span id='points_level_rise'></span></th>
+      <th></th>
+    </tr>
+    <tr>
+      <th><img src="image/coins_gold.jpg" ></th>
+      <th id="bonus_table"><span id='coins_gold_level_rise'></span></th>
+      <th></th>
+    </tr>
+  </table>
+  <div id="button_level_rise">
+    <input id="blr" type=button value="Распределить очки" onClick="">
+    <input id="blr" type=button value="Закрыть" onClick="">
+  </div>   
+</div>
+<div id="info_defeat" style="display:none;" >                              
+    <div id="inscription_defeat" align="center"  >
+    <br><h2>Поражение!</h2>
+    <h5>Попробуйте еще раз</h5>
+    <span align="center"> Вы получили:</span><br>
+    <img src="image/coins.jpg" >
+    <span id='coins_defeat'></span><br><br>
+    <input id="repeat" type=button value="Еще раз" onClick="Restart()">
+    </div> 
+</div>
+<div id="info_victory" style="display:none;" >
+  <div id="inscription_level_rise" align="center" >
+   <h2>Победа!</h2>
+  </div>
+  <div id="inscription_level_rise2">
+    <h4 align="center"> Вы получили:</h4>
+    <img src="image/coins.jpg" >
+    <span id='coins_victory'></span><br>
+    <img src="image/experience.jpg" >
+    <span id='experience_victory'></span>   
+  </div>
+  <div id="available_victory" align="center" >
+  </div>
+  <center><div id="victory_button">
+  <input id="key_victory_exit" type=button value="€xit" onClick="">
+  <input id="key_victory_restart" type=button value="®estart" onClick="Restart()">
+  </div></center>
+</div>
+<center><span id="timer"></span>
+<input type=button id="start_button" value="Начать бой" onClick="Start_Fight()">  
+</body>
+</html>

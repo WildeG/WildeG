@@ -1,0 +1,273 @@
+#player_panel_main {
+  position:absolute;
+	top:470px;
+	left:20px;
+	width:200px;
+  height:150px;
+	border: 3px solid #888888;
+}
+#key_battle_1 {
+  width:100%;
+  height:25%;
+}
+#key_battle_2 {
+  width:50px;
+  height:50px;
+}
+#player_panel_attack {
+  position:absolute;
+	top:470px;
+	left:240px;
+	width:200px;
+  height:150px;
+	border: 3px solid #888888;
+  display:none;  
+}
+#player_panel_block {
+  position:absolute;
+	top:470px;
+	left:240px;
+	width:200px;
+  height:150px;
+	border: 3px solid #888888;
+  display:none;  
+}
+#player_panel_magic {
+  position:absolute;
+	top:470px;
+	left:240px;
+	width:610px;
+  height:150px;
+	border: 3px solid #888888;
+  display:none;
+}
+#battle_kind_magic {
+  position:inherit;
+	left:340px;
+}
+#player_panel_things {
+  position:absolute;
+	top:470px;
+	left:240px;
+	width:610px;
+  height:150px;
+	border: 3px solid #888888;
+  display:none;
+}
+#Inscriptions_1 {
+  position:absolute;
+  top:45%;
+  left:45%;
+  color:#AAAA0A; 
+  font-size: 200%; 
+  width:50%;
+}
+#Inscriptions_2 {
+  position:absolute;
+  top:7%;
+  left:20%; 
+  color:#0808c0; 
+  font-size: 250%; 
+  width:50%;
+}
+#Background {
+  background:#889CAC;
+  position:absolute;
+  top:0;
+  left:0;
+	width:100%;
+  height:100%;
+  opacity: 0.3;
+}
+#info_level_rise {
+  top: 50%; /* Отступ в процентах от верхнего края окна */
+	left: 50%; /* Отступ в процентах от левого края окна */
+	width: 500px; /* Ширина блока */
+	height: 570px; /* Высота блока */
+	position: absolute; /* Абсолютное позиционирование блока */
+	margin-top: -250px; /* Отрицательный отступ от верхнего края страницы, должен равняться половине высоты блока со знаком минус */
+	margin-left: -275px; /* Отрицательный отступ от левого края страницы, должен равняться половине высоты блока со знаком минус */
+  background: url(../image/rise.jpg) repeat-y; /* Путь к фоновому изображению и повторение фона по вертикали */
+}
+#inscription_level_rise {
+  font-size: 170%;
+  color:#11057B;
+  position: absolute;
+  left:40px;
+  width:420px;
+  height:200px;
+}
+#available_level_rise {
+	border: 3px solid #29D8F7;
+  background: url(../image/available.jpg) repeat;
+  position: absolute;
+  top:200px;
+  left: 55px;
+  width:390px;
+  height:150px;
+}
+#inscription_level_rise2 {
+  font-size: 170%;
+  color:#11057B;
+  position: absolute;
+  top:70px;
+  left:55px;
+  width:390px;
+  height:90px;
+}
+#inscriptions_life_computer {
+  
+}
+#info_defeat {
+  top: 50%; /* Отступ в процентах от верхнего края окна */
+	left: 50%; /* Отступ в процентах от левого края окна */
+	width: 500px; /* Ширина блока */
+	height: 550px; /* Высота блока */
+	position: absolute; /* Абсолютное позиционирование блока */
+	margin-top: -250px; /* Отрицательный отступ от верхнего края страницы, должен равняться половине высоты блока со знаком минус */
+	margin-left: -275px; /* Отрицательный отступ от левого края страницы, должен равняться половине высоты блока со знаком минус */
+  background: url(../image/defeat.jpg) repeat-y;
+}
+#inscription_defeat {
+  font-size: 250%;
+  color:#000000;
+}
+#repeat {
+  color: #11057B;
+  font-size: 80%;
+  width: 200px;
+  height: 40px;
+}
+#coins_defeat {
+  color:#000000;
+}
+#coins_victory {
+  color:#000000;
+}
+#experience_victory{
+  color:#000000;
+}
+#info_victory {
+  top: 50%; /* Отступ в процентах от верхнего края окна */
+	left: 50%; /* Отступ в процентах от левого края окна */
+	width: 500px; /* Ширина блока */
+	height: 550px; /* Высота блока */
+	position: absolute; /* Абсолютное позиционирование блока */
+	margin-top: -250px; /* Отрицательный отступ от верхнего края страницы, должен равняться половине высоты блока со знаком минус */
+	margin-left: -275px; /* Отрицательный отступ от левого края страницы, должен равняться половине высоты блока со знаком минус */
+  background: url(../image/victory.jpg) repeat-y;
+}
+#damage_player_panel {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  width: 100px;
+  height: 300px;
+  margin-left: -150px;
+/*  background:#889CAC;*/
+}
+#inscriptions_damage_player {
+  text-align: center;
+  color: #E60000; 
+  font-size: 200%;
+  margin: 0 auto;
+}
+#damage_computer_panel {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  width: 100px;
+  height: 300px;
+  margin-left: +50px;
+/*  background:#889CAC;*/
+}
+#inscriptions_damage_computer {
+  position: absolute;  
+  top: 90%;
+  color: #E60000; 
+  font-size: 200%;
+  opacity: 1; 
+  left: 30px;
+}
+#timer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -200px;
+  margin-top: -50px;
+  font-size: 200%;
+}
+#start_button {
+  position: absolute;
+  top:50%;
+  left:50%;
+  width:100px;
+  height:50px;
+  margin-left: -50px;
+  margin-top: -25px;
+  text-align: center;
+}
+#marking {
+  position: absolute;
+  width:100%;
+  height:100%; 
+}
+#key_victory_exit {
+  width:130px;
+  height:80px;
+}
+#key_victory_restart {
+  width:130px;
+  height:80px;
+}
+#victory_button {
+  position: absolute;
+  top:450px;
+  left:100px;
+  width:300px;
+  height:100px;
+}
+#improving_performance {
+	position: absolute; /* Абсолютное позиционирование блока */
+  top: 50%; /* Отступ в процентах от верхнего края окна */
+	left: 50%; /* Отступ в процентах от левого края окна */
+	width: 500px; /* Ширина блока */
+	height: 550px; /* Высота блока */
+	margin-top: -275px; /* Отрицательный отступ от верхнего края страницы, должен равняться половине высоты блока со знаком минус */
+	margin-left: -250px; /* Отрицательный отступ от левого края страницы, должен равняться половине высоты блока со знаком минус */
+  background: url(../image/improving.jpg) repeat-y;
+}
+#improving_performance_table {
+  position: absolute; /* Абсолютное позиционирование блока */
+  top: 170px; /* Отступ в процентах от верхнего края окна */
+	left: 50px; /* Отступ в процентах от левого края окна */
+	width: 400px; /* Ширина блока */
+  font-size: 30;
+  border: 1;
+}
+#plus_characteristics {
+  width: 35px; /* Ширина блока */
+	height: 35px; /* Высота блока */
+}
+#reward_level_rise_table {
+  text-align: left;
+  position: absolute; /* Абсолютное позиционирование блока */
+  top: 360px; /* Отступ в процентах от верхнего края окна */
+	left: 50px; /* Отступ в процентах от левого края окна */
+	width: 400px; /* Ширина блока */
+  font-size: 30;
+}
+#bonus_table {
+  border-right: 1px dashed black;
+}
+#button_level_rise {
+  position: absolute; /* Абсолютное позиционирование блока */
+  top: 510px; /* Отступ в процентах от верхнего края окна */
+	left: 50px; /* Отступ в процентах от левого края окна */
+	width: 400px; /* Ширина блока */
+  height: 45px; /* Высота блока */
+}
+#blr {
+  width: 198px; /* Ширина блока */
+  height: 45px; /* Высота блока */
+}
