@@ -189,8 +189,8 @@ CREATE TABLE IF NOT EXISTS `reward_monster` (
 
 CREATE TABLE IF NOT EXISTS `users` (
 `ID_Users` smallint(6) NOT NULL,
-  `Login` varchar(16) NOT NULL,
-  `Password` varchar(16) NOT NULL,
+  `login` varchar(16) NOT NULL,
+  `password` varchar(32) NOT NULL,
   `Nikname` varchar(20) NOT NULL DEFAULT 'Player',
   `E_Mail` varchar(30) DEFAULT NULL,
   `Name` varchar(20) NOT NULL DEFAULT 'Player',

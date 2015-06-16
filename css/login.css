@@ -1,3 +1,4 @@
+
 a {
   margin: 6px 6px 6px 6px; 
   text-decoration: none; /* Отменяем подчеркивание у ссылки */
@@ -48,15 +49,15 @@ h1 {
   line-height: 40px;
 }
 #copyright {
-	position:absolute;
-	bottom:0px;
-	left: 25px;
-	width: 450px;
-	height: 70px;
-	font-size: 10px;
-	text-align: center;
-	color: #000;
-	opacity: 0.6; 
+  position:absolute;
+  bottom:0px;
+  left: 25px;
+  width: 450px;
+  height: 70px;
+  font-size: 10px;
+  text-align: center;
+  color: #000;
+  opacity: 0.6; 
 }
   .field { /*поля ввода текста*/
   text-align: left;

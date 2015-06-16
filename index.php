@@ -1,5 +1,5 @@
 <head>
-		<meta http-equiv="Content-Type" content="text/html"; charset='utf-8'>
+		<meta http-equiv="Content-Type" content="text/html"; charset='utf8'>
 		<link rel="shortcut icon" href="http://www.sdws.ru/favicon.ico" type="image/x-icon">
 		<title>Вход</title>
 		<link href="css/login.css" rel="stylesheet" type="text/css">
