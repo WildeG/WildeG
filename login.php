@@ -1,5 +1,6 @@
 ﻿<?php
 session_start();// вся процедура работает на сессиях. Именно в ней хранятся данные пользователя, пока он находится на сайте. Очень важно запустить их в самом начале странички!!!
+$link = "http://www.wilde-gard.loc/";
 
 if (isset($_POST['login'])) { $login = $_POST['login']; if ($login == '') { unset($login);} } //заносим введенный пользователем логин в переменную $login, если он пустой, то уничтожаем переменную
 if (isset($_POST['password'])) { $password=$_POST['password']; if ($password =='') { unset($password);} }
@@ -38,10 +39,10 @@ else {
           if ($myrow['password']==$password) {
           //если пароли совпадают, то запускаем пользователю сессию
           $_SESSION['login']=$myrow['login']; 
-          $_SESSION['id']=$myrow['id'];
+          $_SESSION['id']=$myrow['id_users'];
           $_SESSION['name']=$myrow['name'];
           $_SESSION['family']=$myrow['family'];//эти данные очень часто используются, вот их и будет "носить с собой" вошедший пользователь
-          header('Location:http://wildegard.com/index.php');
+          header('Location:'.$link.'');
           }
 
        else {
