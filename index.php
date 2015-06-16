@@ -1,8 +1,8 @@
-﻿<head>
+<head>
 		<meta http-equiv="Content-Type" content="text/html"; charset='utf-8'>
 		<link rel="shortcut icon" href="http://www.sdws.ru/favicon.ico" type="image/x-icon">
 		<title>Вход</title>
-		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<link href="css/login.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
 		<form id="login" action="login.php" method="post" enctype="multipart/form-data"></form>
