@@ -10,9 +10,9 @@
 			<div id="login">
 				<center><h1>Вход</h1></center>
 				<a class="inscriptions">Логин:</a><br>
-				<input class="field" size="30" form="login" type="text"> <br>
+				<input class="field" size="30" form="login" type="text" name='login'> <br>
 				<a class="inscriptions">Пароль:</a><br>
-				<input class="field" size="30" form="login" type="password"> <br>
+				<input class="field" size="30" form="login" type="password" name='password'> <br>
 				<input id="button" value="Вход" form="login" type="submit"> <br>
 				<a href="registration.html">Нет учетной записи? </a>
 				<a href="forgot.html">Забыли пароль? </a> <br>
