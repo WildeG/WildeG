@@ -1,37 +1,50 @@
 <html>
 	<head>
-	<link rel="shortcut icon" href="http://www.sdws.ru/favicon.ico" type="image/x-icon">
-	<link href="css/registration.css" rel="stylesheet" type="text/css" />
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Регистрация</title>
+
+		<link rel="shortcut icon" href="http://www.sdws.ru/favicon.ico" type="image/x-icon">
+		<link href="css/registration.css" rel="stylesheet" type="text/css" />	
+
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>	
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">	
+
+		<title>Регистрация</title>
+
 	</head>
 	<body>
-	<div id="regpage">
-	<div id="registration" >	
-		<form action="save_user.php" method="post" enctype="multipart/form-data">
-		<center><h1>Регистрация</h1></center>
-		<a class="inscriptions">Логин:</a><br>
-		<input class="field" type="text" size="30" maxlength="16" name="login" ><br>
-		<a class="inscriptions">Ваш никнейм:</a><br>
-		<input class="field" type="text" size="30" maxlength="16" name="login" ><br>
-		<a class="inscriptions">Пароль:</a><br>
-		<input class="field" type="password" size="30" maxlength="16" name="password" ><br>
-		<a class="inscriptions">Подтверждениe пароля:</a><br>
-		<input class="field" type="password" size="30" maxlength="16" name="password_repeat"><br>
-		<a class="inscriptions">Имя:</a><br>
-		<input class="field" type="text" size="30" maxlength="20" name="name"><br>
-		<a class="inscriptions">Фамилия:</a><br>
-		<input class="field" type="text" size="30" maxlength="30" name="lastname">
-		<center><input id="regbutton" type="submit" value="Зарегистроваться" name="submit" ></center>
-		<br>
-		</form>
-	</div>
-	<div id="copyright">
-	<strong>Copyright © 2015. Михайлов Олег. Все права защищены.</strong>
-	<p>Перепечатка материалов и использование их в любой форме, в том 
-	числе и в электронных СМИ, возможны только с письменного разрешения 
-	администрации сайта. При этом ссылка на сайт обязательна.</p>
-	</div>  
-	</div> 
+		<div id="regpage">
+		<div id="registration" >	
+			<form action="save_user.php" method="post" enctype="multipart/form-data">
+			<center><h1>Регистрация</h1></center>
+			<a class="inscriptions">Логин:*</a><br>
+			<input class="field" type="text" size="30" maxlength="16" name="login" ><br>
+			<a class="inscriptions">Ваш никнейм:*</a><br>
+			<input class="field" type="text" size="30" maxlength="16" name="nikname" ><br>
+			<a class="inscriptions">Пароль:*</a><br>
+			<input class="field" type="password" size="30" maxlength="16" name="password" ><br>
+			<a class="inscriptions">Подтверждениe пароля:*</a><br>
+			<input class="field" type="password" size="30" maxlength="16" name="password_repeat"><br>
+			<a href="#dp" id="add-component" class="inscriptions">Заполнить все данные</a>
+			<div id="additionally"></div>
+			<strong  class="inscriptions">Поля помеченые * обязательны!</strong>
+			<script>
+	            $("#add-component").click(function(){
+	                // $("<a class='inscriptions'>Имя:</a><br><input class='field' type='text' size='30' maxlength='20' name='name'><br><a class='inscriptions'>Фамилия:</a><br><input class='field' type='text' size='30' maxlength='30' name='lastname'><a class='inscriptions'>E-Mail:</a><br><input class='field' type='text' size='30' maxlength='16' name='e-mail'><br><a class='inscriptions'>Дата рождения:</a><br><input class='field' type='text' size='30' maxlength='16' name='date_of_birth' ><br><a class='inscriptions'>Секретный вопрос:</a><br><input class='field' type='text' size='30' maxlength='16' name='secretq' ><br><a class='inscriptions'>Ответ на вопрос:</a><br><input id='dp' class='field' type='text' size='30' maxlength='16' name='answer' ><br>").appendTo("");
+	                $("#add-component").remove()
+	                $("#additionally").append("<a class='inscriptions'>Имя:</a><br><input class='field' type='text' size='30' maxlength='20' name='name'><br><a class='inscriptions'>Фамилия:</a><br><input class='field' type='text' size='30' maxlength='30' name='lastname'><a class='inscriptions'>E-Mail:</a><br><input class='field' type='text' size='30' maxlength='16' name='e-mail'><br><a class='inscriptions'>Дата рождения:</a><br><input class='field' type='text' size='30' maxlength='16' name='date_of_birth' ><br><a class='inscriptions'>Секретный вопрос:</a><br><input class='field' type='text' size='30' maxlength='16' name='secretq' ><br><a class='inscriptions'>Ответ на вопрос:</a><br><input id='dp' class='field' type='text' size='30' maxlength='16' name='answer' ><br>");
+	            });
+	        </script>
+	        <center><input id="regbutton" type="submit" value="Зарегистроваться" name="submit" ></center>
+			</form>
+			
+
+		</div>
+		<div id="copyright">
+		<strong>Copyright © 2015. Михайлов Олег. Все права защищены.</strong>
+		<p>Перепечатка материалов и использование их в любой форме, в том 
+		числе и в электронных СМИ, возможны только с письменного разрешения 
+		администрации сайта. При этом ссылка на сайт обязательна.</p>
+		</div>  
+		</div> 
 	</body>
 </html>
