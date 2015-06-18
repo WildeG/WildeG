@@ -28,8 +28,8 @@ SET time_zone = "+00:00";
 
 CREATE TABLE IF NOT EXISTS `assignments` (
 `ID_Assignments` smallint(6) NOT NULL,
-  `Assignments` text NOT NULL,
-  `Level` smallint(6) DEFAULT NULL
+  `assignments` text NOT NULL,
+  `level` smallint(6) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -191,14 +191,15 @@ CREATE TABLE IF NOT EXISTS `users` (
 `ID_Users` smallint(6) NOT NULL,
   `login` varchar(16) NOT NULL,
   `password` varchar(32) NOT NULL,
-  `Nikname` varchar(20) NOT NULL DEFAULT 'Player',
-  `E_Mail` varchar(30) DEFAULT NULL,
-  `Name` varchar(20) NOT NULL DEFAULT 'Player',
-  `Family` varchar(30) NOT NULL DEFAULT '#1',
-  `Date_of_Birth` date DEFAULT NULL,
-  `SecretQ` varchar(100) NOT NULL,
-  `Answer` varchar(50) NOT NULL,
-  `Date_of_Registration` date NOT NULL
+  `nickname` varchar(20) NOT NULL DEFAULT 'Player',
+  `email` varchar(30) DEFAULT NULL,
+  `name` varchar(20) NOT NULL DEFAULT 'Player',
+  `family` varchar(30) NOT NULL DEFAULT '#1',
+  `date_of_birth` date DEFAULT NULL,
+  `secretq` varchar(100) NOT NULL,
+  `answer` varchar(50) NOT NULL,
+  `date_of_registration` date NOT NULL,
+  `status` varchar(16) NOT NULL DEFAULT 'User'
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 --

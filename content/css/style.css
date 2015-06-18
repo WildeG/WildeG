@@ -8,6 +8,17 @@ a:visited {
 h1 {
   color: #006666;
 }
+#copyright {
+
+  bottom:0px;
+  margin-left: 25px;
+  width: 450px;
+  height: 70px;
+  font-size: 10px;
+  text-align: center;
+  color: #000;
+  opacity: 0.6; 
+}
   .field { /*поля ввода текста*/
   text-align: left;
   background: linear-gradient(to top, #66ffff , #00cccc );
