@@ -41,7 +41,7 @@ else {
           $_SESSION['login']=$myrow['login']; 
           $_SESSION['id']=$myrow['id_users'];
           $_SESSION['name']=$myrow['name'];
-          $_SESSION['family']=$myrow['family'];//эти данные очень часто используются, вот их и будет "носить с собой" вошедший пользователь
+          $_SESSION['lastname']=$myrow['lastname'];//эти данные очень часто используются, вот их и будет "носить с собой" вошедший пользователь
           header('Location:'.$link.'');
           }
 

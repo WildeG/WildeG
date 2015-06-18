@@ -32,11 +32,11 @@ $link = "http://www.wilde-gard.loc/";
 				</div>";
 			}
 			else { 
-	echo 
-		"<div id='band'>
-			<div id='user'><center>
-				<a href='user.php' title='Редактировать информацию о себе''>Вы вошли как<br><h1>".$_SESSION['family']."&nbsp".$_SESSION['name']."</h1></a><br>
-				<a href='exit.php' >(Выход)</a></center>
+					echo 
+					"<div id='band'>
+					<div id='user'><center>
+					<a href='user.php' title='Редактировать информацию о себе''>Вы вошли как<br><h1>".$_SESSION['lastname']."&nbsp".$_SESSION['name']."</h1></a><br>
+					<a href='exit.php' >(Выход)</a></center>
 			</div>
 		</div> ";
 				  } ?>

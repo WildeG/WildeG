@@ -206,7 +206,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 -- Дамп данных таблицы `users`
 --
 
-INSERT INTO `users` (`ID_Users`, `Login`, `Password`, `Nikname`, `E_Mail`, `Name`, `Family`, `Date_of_Birth`, `SecretQ`, `Answer`, `Date_of_Registration`) VALUES
+INSERT INTO `users` (`ID_Users`, `login`, `password`, `nickname`, `email`, `name`, `family`, `date_of_birth`, `secretq`, `answer`, `date_of_registration`) VALUES
 (2, 'Admin', '7fa8282ad93047a4', 'Admin', 'olegmixa@mail.ru', 'Олег', 'Михайлов', '1996-09-24', 'Имя любимой девушки?', 'Марина', '2015-01-28'),
 (3, 'Oleg', '7fa8282ad93047a4', 'аакауаку', 'vasya@pupkin.com', 'Сергей', 'STEAM', '1996-09-24', 'Сколько', '12', '2015-01-28');
 
