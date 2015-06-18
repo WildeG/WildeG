@@ -9,8 +9,8 @@ h1 {
   color: #006666;
 }
 #copyright {
-  position:absolute;
-  bottom:-1px;
+
+  bottom:0px;
   margin-left: 25px;
   width: 450px;
   height: 70px;

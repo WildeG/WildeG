@@ -40,7 +40,7 @@ $link = "http://www.wilde-gard.loc/";
 			</div>
 		</div> ";
 				  } ?>
-			<div id="copyright">
+			<div id="copyright" style='position:absolute'>
 				<strong>Copyright © 2015. Михайлов Олег. Все права защищены.</strong>
 				<p>Перепечатка материалов и использование их в любой форме, в том 
 				числе и в электронных СМИ, возможны только с письменного разрешения 
