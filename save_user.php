@@ -1,41 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="content/css/registration.css" rel="stylesheet" type="text/css" />	
+<link href="content/css/style.css" rel="stylesheet" type="text/css" />	
+<title></title>
+</head>
+<body>
+<div id="regpage">
 <?php
   include ("bd.php");
 
   if (isset($_POST['submit'])){
     if(empty($_POST['login']))  {
-      echo '<br><font color="red"><img border="0" src="error.gif" align="middle"> Введите логин! </font>';
+      echo '<br><font color="red">Введите логин! </font>';
     }
     elseif (!preg_match("/^\w{3,16}$/", $_POST['login'])) {
-      echo '<br><font color="red"><img border="0" src="error.gif" align="middle"> В поле "Логин" введены недопустимые символы! Только латинские буквы, цифры и подчеркивание!</font>';
-    }
-    elseif(empty($_POST['password'])) {
-      echo '<br><font color="red"><img border="0" src="error.gif" align="middle"> Введите пароль!</font>';
+      echo '<center><a class="inscription">В поле "Логин" введены недопустимые символы! Только латинские буквы, цифры и подчеркивание!</center>';
     }
     elseif (!preg_match("/\A(\w){6,16}\Z/", $_POST['password'])) {
-      echo '<br><font color="red"><img border="0" src="error.gif" align="middle"> Пароль слишком короткий! Пароль должен быть не менее 6 символов! </font>';
-    }
-    elseif(empty($_POST['password_repeat'])) {
-      echo '<br><font color="red"><img border="0" src="error.gif" align="middle"> Введите подтверждение пароля!</font>';
+      echo '<br><font color="red">Пароль слишком короткий! Пароль должен быть не менее 6 символов! </font>';
     }
     elseif($_POST['password'] != $_POST['password_repeat']) {
-      echo '<br><font color="red"><img border="0" src="error.gif" align="middle"> Введенные пароли не совпадают!</font>';
-    }
-    elseif(empty($_POST['name'])) {
-      echo '<br><font color="red"><img border="0" src="error.gif" align="middle"> Введите имя!</font>';
-    }
-    elseif (!preg_match("/^\w/", $_POST['name'])) {
-      echo '<br><font color="red"><img border="0" src="error.gif" align="middle"> В поле "Имя" введены недопустимые символы! </font>';
-    }
-    elseif(empty($_POST['lastname'])) {
-      echo '<br><font color="red"><img border="0" src="error.gif" align="middle"> Введите фамилию!</font>';
-    }
-    elseif (!preg_match("/^\w/", $_POST['lastname'])) {
-      echo '<br><font color="red"><img border="0" src="error.gif" align="middle"> В поле "Фамилия" введены недопустимые символы! </font>'; // Исправить проверку на регистрацию. Ввести недопустимые символы
-    } 
+      echo '<br><font color="red">Введенные пароли не совпадают!</font>';
+  	}
     else{
         $login = $_POST['login'];
         $password = $_POST['password'];
-        $mdPassword = md5($password);
         $name = $_POST['name'];
         $family = $_POST['lastname'];
         $date_reg = date("Y-m-d");
@@ -55,3 +45,6 @@
         }
     }   
 ?>
+</div>
+</body>
+</html>

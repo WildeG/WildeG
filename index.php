@@ -7,12 +7,13 @@ $link = "http://www.wilde-gard.loc/";
 	<head>
 		<meta http-equiv="Content-Type" content="text/html"; charset='utf8'>
 		<title>Вход</title>
-		<link href="css/login.css" rel="stylesheet" type="text/css">
+		<link href="content/css/login.css" rel="stylesheet" type="text/css">
+		<link href="content/css/style.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
 		<div id="logpage">	
 			<?php
-			// Проверяем, пусты ли пересменные логина и id пользователя
+			// Проверяем, пусты ли переменные логина и id пользователя
 			if (empty($_SESSION['login']) or empty($_SESSION['id'])) {
 						echo 
 				"<form id='login' action='login.php' method='post' enctype='multipart/form-data'></form><div id='login'>

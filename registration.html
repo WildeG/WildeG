@@ -2,8 +2,8 @@
 	<head>
 
 		<link rel="shortcut icon" href="http://www.sdws.ru/favicon.ico" type="image/x-icon">
-		<link href="css/registration.css" rel="stylesheet" type="text/css" />	
-
+		<link href="content/css/registration.css" rel="stylesheet" type="text/css" />	
+		<link href="content/css/style.css" rel="stylesheet" type="text/css">
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>	
 
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">	
@@ -16,20 +16,19 @@
 		<div id="registration" >	
 			<form action="save_user.php" method="post" enctype="multipart/form-data">
 			<center><h1>Регистрация</h1></center>
-			<a class="inscriptions">Логин:*</a><br>
+			<a class="inscriptions">Логин:<strong style="color:#ff2400">*</strong><br>
 			<input class="field" type="text" size="30" maxlength="16" name="login" ><br>
-			<a class="inscriptions">Ваш никнейм:*</a><br>
-			<input class="field" type="text" size="30" maxlength="16" name="nikname" ><br>
-			<a class="inscriptions">Пароль:*</a><br>
+			<a class="inscriptions">Ваш никнейм:<strong style="color:#ff2400">*</strong></a><br>
+			<input class="field" type="text" size="30" maxlength="16" name="nickname" ><br>
+			<a class="inscriptions">Пароль:<strong style="color:#ff2400">*</strong></a><br>
 			<input class="field" type="password" size="30" maxlength="16" name="password" ><br>
-			<a class="inscriptions">Подтверждениe пароля:*</a><br>
+			<a class="inscriptions">Подтверждениe пароля:<strong style="color:#ff2400">*</strong></a><br>
 			<input class="field" type="password" size="30" maxlength="16" name="password_repeat"><br>
 			<a href="#dp" id="add-component" class="inscriptions">Заполнить все данные</a>
 			<div id="additionally"></div>
-			<strong  class="inscriptions">Поля помеченые * обязательны!</strong>
+			<strong  class="inscriptions"><strong style="color:#ff2400">Поля помеченные * обязательны!</strong></strong>
 			<script>
 	            $("#add-component").click(function(){
-	                // $("<a class='inscriptions'>Имя:</a><br><input class='field' type='text' size='30' maxlength='20' name='name'><br><a class='inscriptions'>Фамилия:</a><br><input class='field' type='text' size='30' maxlength='30' name='lastname'><a class='inscriptions'>E-Mail:</a><br><input class='field' type='text' size='30' maxlength='16' name='e-mail'><br><a class='inscriptions'>Дата рождения:</a><br><input class='field' type='text' size='30' maxlength='16' name='date_of_birth' ><br><a class='inscriptions'>Секретный вопрос:</a><br><input class='field' type='text' size='30' maxlength='16' name='secretq' ><br><a class='inscriptions'>Ответ на вопрос:</a><br><input id='dp' class='field' type='text' size='30' maxlength='16' name='answer' ><br>").appendTo("");
 	                $("#add-component").remove()
 	                $("#additionally").append("<a class='inscriptions'>Имя:</a><br><input class='field' type='text' size='30' maxlength='20' name='name'><br><a class='inscriptions'>Фамилия:</a><br><input class='field' type='text' size='30' maxlength='30' name='lastname'><a class='inscriptions'>E-Mail:</a><br><input class='field' type='text' size='30' maxlength='16' name='e-mail'><br><a class='inscriptions'>Дата рождения:</a><br><input class='field' type='text' size='30' maxlength='16' name='date_of_birth' ><br><a class='inscriptions'>Секретный вопрос:</a><br><input class='field' type='text' size='30' maxlength='16' name='secretq' ><br><a class='inscriptions'>Ответ на вопрос:</a><br><input id='dp' class='field' type='text' size='30' maxlength='16' name='answer' ><br>");
 	            });
