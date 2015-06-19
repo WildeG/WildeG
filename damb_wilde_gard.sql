@@ -202,6 +202,14 @@ CREATE TABLE IF NOT EXISTS `users` (
   `status` varchar(16) NOT NULL DEFAULT 'User'
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
+
+CREATE TABLE IF NOT EXISTS `check_` (
+ `code` varchar(20) NOT NULL,
+ `usedcode` varchar(20) NOT NULL,
+ `entertime` varchar(10) NOT NULL,
+ `armor` varchar(30) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+
 --
 -- Дамп данных таблицы `users`
 --

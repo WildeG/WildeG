@@ -4,7 +4,6 @@
   top:50%;
   left:50%;
   width:500px;
-  height:600px;
   margin-left: -250px;
   margin-top: -300px;
   -webkit-box-shadow:0 0 30px #666;
@@ -21,6 +20,19 @@
   right:0%;
   bottom:40px;
   width:90px;
+  background: linear-gradient(to top, #66ffff , #00cccc );
+  color: #006666;
+  text-shadow: 0 0 4px rgba(0,0,0,0.3);
+  border-color:#00ffff;
+  font-size: 20;
+  -webkit-border-radius:35px 35px 35px 35px;
+  border-radius:35px 35px 35px 35px;
+  -moz-border-radius:35px 35px 35px 35px;
+  -khtml-border-radius:35px 35px 35px 35px;
+  }
+  #button_2 { /*кнопки*/
+  position: relative;
+  margin-top:15px;
   background: linear-gradient(to top, #66ffff , #00cccc );
   color: #006666;
   text-shadow: 0 0 4px rgba(0,0,0,0.3);
