@@ -1,4 +1,14 @@
-﻿<?php
+﻿<!DOCTYPE html>
+<html>
+<head>
+<link href="content/css/login.css" rel="stylesheet" type="text/css" /> 
+<link href="content/css/style.css" rel="stylesheet" type="text/css" />  
+<title>Вход</title>
+</head>
+<body>
+<div id="logpage">
+<center>
+<?php
 session_start();// вся процедура работает на сессиях. Именно в ней хранятся данные пользователя, пока он находится на сайте. Очень важно запустить их в самом начале странички!!!
 $link = "http://www.wilde-gard.loc/";
 
@@ -51,3 +61,11 @@ else {
 	   }
 }
 ?>
+<div>
+<center><a href='index.php'>На главную</a></center>
+</div>
+</center>
+</div>
+
+</body>
+</html>

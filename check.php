@@ -9,7 +9,7 @@
 	$link = "http://www.wilde-gard.loc/";
 	if (isset($_POST['code'])) { $code = $_POST['code']; if ($code == '') { unset($code);} }
 	if(empty($code)){
-		exit('Введите код.');
+		exit('<center>Введите код.<br><a href="/check.html">Назад</a></center>');
 	}
 	include('bd.php');
 	$check=("SELECT code FROM check_ WHERE code='$code'");

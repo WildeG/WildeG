@@ -30,7 +30,7 @@
   	echo '<center><a class="iscription">Неверно введен E-Mail.</a></center>';
   	}
     else{
-      	$login = $_POST['login'];
+      $login = $_POST['login'];
 	    $password = md5($_POST['password']);
 	    $nickname=$_POST['nickname'];
 	    $date_reg = date("Y-m-d");	

@@ -27,7 +27,7 @@ $link = "http://www.wilde-gard.loc/";
 						<input class='field' size='30' form='login' type='password' name='password'> <br>
 						<input id='button' value='Вход' form='login' type='submit'> <br>
 					
-					<a href='registration.html'>Нет учетной записи? </a>
+					<a href='check.html'>Нет учетной записи? </a>
 					<a href='forgot.html'>Забыли пароль? </a> <br>
 				</div>";
 			}
